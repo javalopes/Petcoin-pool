@@ -1,6 +1,6 @@
 {
-    "coin": "petcoin",
-    "symbol": "XPET",
+    "coin": "turtlecoin",
+    "symbol": "TRTL",
     "coinUnits": 100,
     "coinDifficultyTarget": 30,
 
@@ -19,7 +19,7 @@
   "poolServer": {
     "enabled": true,
     "clusterForks": "auto",
-    "poolAddress": "XPETK3kDmN72Y8n3vUeW5vJQqtnSdH8adJFvdmvAsT7GFmUXjLvioPfDdtMoMWdL2FVh768BzyqfWe9QNjKcabV229ACvSnpvo",
+    "poolAddress": "TRTLv3mnq2wS6GepH6nb628jEjFseeojACYToJ1BXaZNNEvLkzW327zTVCh7ncGtS2MU2usGNq9ygVwiCTTft9QkN3t5P2Xqv3f",
     "blockRefreshInterval": 1000,
     "minerTimeout": 3600,
     "ports": [
@@ -58,11 +58,21 @@
       "addressSeparator": "."
     },
     "shareTrust": {
-      "enabled": true,
-      "min": 10,
-      "stepDown": 3,
-      "threshold": 10,
-      "penalty": 30
+      "enabled": false,
+      "maxTrustPercent": 50,
+      "probabilityStepPercent": 1,
+      "probabilityStepWindow": 15,
+      "minUntrustedShares": 50,
+      "minUntrustedSeconds": 300,
+      "maxTrustedDifficulty": 100000,
+      "maxPenaltyMultiplier": 100,
+      "minPenaltyMultiplier": 2,
+      "penaltyMultiplierStep": 1,
+      "penaltyStepUpWindow": 30,
+      "penaltyStepDownWindow": 120,
+      "maxShareWindow": 300,
+      "maxIPCRate": 15,
+      "maxAge": 604800
     },
     "banning": {
       "enabled": true,
@@ -81,7 +91,6 @@
         "enabled": true,
         "interval": 120,
         "maxAddresses": 50,
-        "mixin": 7,
         "transferFee": 100,
         "minPayment": 100000,
         "maxTransactionAmount": 0,
@@ -106,18 +115,18 @@
         "port": 8117,
         "blocks": 30,
         "payments": 30,
-        "password": "pool"
+        "password": "your_password"
     },
 
     "daemon": {
         "host": "127.0.0.1",
-        "port": 11998
+        "port": 11898
     },
 
     "wallet": {
         "host": "127.0.0.1",
         "port": 8070,
-        "password": "pool"
+        "password": "<replace with rpc password>"
     },
 
     "redis": {
