@@ -1,30 +1,23 @@
 {
-    "name": "turtle-pool",
-    "version": "0.0.5",
+    "name": "forknote-pool",
+    "version": "0.0.1",
     "license": "GPL-2.0",
     "authors": "Matthew Little",
-    "contributors": [
-        "Brandon Lehmann <brandonlehmann@gmail.com>"
-    ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/turtlecoin/turtle-pool"
-    },
-    "scripts": {
-        "test": "node tests/dependencyTests.js"
+        "url": "https://github.com/forknote/forknote-pool"
     },
     "dependencies": {
-        "async": "1",
-        "base58-native": "*",
         "bignum": "*",
+        "async": "1",
+        "redis": "*",
         "cli-color": "*",
         "dateformat": "*",
-        "redis": "*",
-        "safe-buffer": "^5.1.2",
-        "turtlecoin-cryptonote-util": "0.0.5",
-        "turtlecoin-multi-hashing": "0.0.14"
+        "base58-native": "*",
+        "multi-hashing": "git://github.com/turtlecoin/node-multi-hashing-node8.git",
+        "cryptonote-util": "git://github.com/turtlecoin/node-cryptonote-util.git"
     },
     "engines": {
-        "node": ">=6"
+        "node": ">=0.10"
     }
 }

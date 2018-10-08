@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "coin": "turtlecoin",
+=======
+    "coin": "petcoin",
+>>>>>>> parent of 2c48ac8... Update 1.2
     "symbol": "XPET",
     "coinUnits": 100,
     "coinDifficultyTarget": 30,
@@ -19,7 +23,11 @@
   "poolServer": {
     "enabled": true,
     "clusterForks": "auto",
+<<<<<<< HEAD
     "poolAddress": "XPETHsQ4CaY1GgJjKvbeSqRwsV6tXDLCoCgXyXCj1KKCRNka5p739gbBpT2rjsGnGNDxN1QX996beURQEShHtbsn1Z8GNRi4Fh",
+=======
+    "poolAddress": "XPETK3kDmN72Y8n3vUeW5vJQqtnSdH8adJFvdmvAsT7GFmUXjLvioPfDdtMoMWdL2FVh768BzyqfWe9QNjKcabV229ACvSnpvo",
+>>>>>>> parent of 2c48ac8... Update 1.2
     "blockRefreshInterval": 1000,
     "minerTimeout": 3600,
     "ports": [
@@ -58,21 +66,11 @@
       "addressSeparator": "."
     },
     "shareTrust": {
-      "enabled": false,
-      "maxTrustPercent": 50,
-      "probabilityStepPercent": 1,
-      "probabilityStepWindow": 15,
-      "minUntrustedShares": 50,
-      "minUntrustedSeconds": 300,
-      "maxTrustedDifficulty": 100000,
-      "maxPenaltyMultiplier": 100,
-      "minPenaltyMultiplier": 2,
-      "penaltyMultiplierStep": 1,
-      "penaltyStepUpWindow": 30,
-      "penaltyStepDownWindow": 120,
-      "maxShareWindow": 300,
-      "maxIPCRate": 15,
-      "maxAge": 604800
+      "enabled": true,
+      "min": 10,
+      "stepDown": 3,
+      "threshold": 10,
+      "penalty": 30
     },
     "banning": {
       "enabled": true,
@@ -91,6 +89,7 @@
         "enabled": true,
         "interval": 120,
         "maxAddresses": 50,
+        "mixin": 7,
         "transferFee": 100,
         "minPayment": 100000,
         "maxTransactionAmount": 0,
@@ -115,7 +114,11 @@
         "port": 8117,
         "blocks": 30,
         "payments": 30,
+<<<<<<< HEAD
         "password": "test"
+=======
+        "password": "pool"
+>>>>>>> parent of 2c48ac8... Update 1.2
     },
 
     "daemon": {
@@ -126,7 +129,11 @@
     "wallet": {
         "host": "127.0.0.1",
         "port": 8070,
+<<<<<<< HEAD
         "password": "test"
+=======
+        "password": "pool"
+>>>>>>> parent of 2c48ac8... Update 1.2
     },
 
     "redis": {
